@@ -15,7 +15,7 @@
 <body>
     <header>
         <nav>
-            <div class="navbar bg-base-100 w-5/6 mx-auto">
+            <div class="navbar bg-base-100 w-5/6 mx-auto h-auto">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -41,15 +41,47 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn btn-primary bg-orange-600 border-none text-xl">Get Ticket</a>
+
+                  <div tabindex="0" role="button" class="btn btn-ghost hidden lg:flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </div>
+                  <div>
+                    <a class="btn btn-primary bg-orange-600 border-none text-xl">Get Ticket</a>
+                  </div>
+                  
                 </div>
               </div>
         </nav>
     </header>
 
     <main>
-        <section class="banner">
-            
+        <section class="banner w-5/6 max-sm:h-96 mx-auto mt-7  mb-0">
+          <div class="carousel">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full bg-no-repeat"/>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-slate-600 text-white border-0">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-slate-600 text-white border-0">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full bg-no-repeat max-sm:h-48">
+              <img src="Images/nv.jpg" class="w-full rounded-2xl" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-slate-600 text-white border-0">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-slate-600 text-white border-0">❯</a>
+              </div>
+            </div>
+
+          </div>
+
+            <div class="h-[rounded-2xl] bg-slate-800 text-white border-0 w-2/3 ml-52 mr-7 rounded-2xl -translate-y-48 pt-0 max-sm:w-full max-sm:mx-auto max-sm:my-60 w-3/6 lg:ms-auto max-sm:w-full  ">
+              <h1 class="text-2xl font-extrabold p-4">
+                Meet all the heroes from the field
+              </h1>
+              <p class="font-medium text-base p-4">
+                The first World Championship that was held as an individual event was in 1930. It was held in Chamonix, France; Vienna, Austria and Berlin.
+              </p>
+            </div>
         </section>
     </main>
 
